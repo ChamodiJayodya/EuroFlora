@@ -87,4 +87,13 @@ body{
     margin-left: 20px;
     text-align: left;
 }
-
+section{
+    padding-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.column{
+    float: left;
+    width: 25%;
+    text-align: left;   
+}
