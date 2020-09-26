@@ -5,7 +5,7 @@ body{
     border: 0;
 }
 /* header*/
-.main-nav
+.main-nav_section_1
 {
     width: 100%;
     display: flex;
@@ -20,24 +20,24 @@ body{
     padding-left: 50px;
 }
 
-.main-nav li
+.main-nav_section_1 li
 {
     margin-top: 10px; 
 }
 
-.main-nav li a
+.main-nav_section_1 li a
 {
     color: grey;
     text-decoration: none;
     padding: 10px 10px;    
 }
 
-.main-nav li.active a
+.main-nav_section_1ain-nav li.active a
 {
     text-underline-position: below;
 }
 
-.main-nav li a:hover
+.main-nav_section_1 li a:hover
 {
     color: #cf925f;
     font-weight: bold;
@@ -53,13 +53,14 @@ body{
     margin-left: 150px;
     margin-right: 150px;
 }
-.tagline{
+.section_2{
     font-family: Brush Script MT, Brush Script Std, cursive;
     padding-top: 20px;
     margin-left: 25px;
 }
-.pic1{
+.section_3{
     margin-left: 25px;
+    margin-top: 20px;
     position: relative;
 }
 .box1{
@@ -83,17 +84,21 @@ body{
     opacity: 0.75;   
     align-items: center; 
 }
-.paragraph{
+.section_4{
+    margin-top: 50px;
     margin-left: 20px;
     text-align: left;
 }
-section{
+
+.section_5{
     padding-top: 20px;
     margin-left: 150px;
     margin-right: 150px;
+    
 }
 .column{
     float: left;
     width: 25%;
-    text-align: left;   
+    text-align: left; 
+    
 }
