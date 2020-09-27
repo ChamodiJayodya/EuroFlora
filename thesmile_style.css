@@ -10,7 +10,7 @@ body{
 header{
     background: radial-gradient(circle, white, rgb(196, 157, 121));
 }
-/* header*/
+
 .main-nav_section_1
 {
     width: 100%;
@@ -38,11 +38,6 @@ header{
     padding: 10px 10px;    
 }
 
-.main-nav_section_1ain-nav li.active a
-{
-    text-underline-position: below;
-}
-
 .main-nav_section_1 li a:hover
 {
     color: #cf925f;
@@ -50,8 +45,77 @@ header{
     transition: 0.4px;
 }
 .container{
-    background-color: white;
     margin-left: 150px;
     margin-right: 150px;
-    height: 1800px;
+    background-color: white;
+    height: 1850px;
+    margin-top: 0px;
+    display: flex;
 }
+.image p{
+    margin-right: 50px;
+}
+.price{   
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        margin-left: 45px;
+        cursor: pointer;
+        font-size: 15px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;   
+        box-sizing: border-box;
+        padding: 7px;
+        width: 250px;
+        border-style: double;   
+        border-radius: 5px;       
+        padding-right: 20px;
+        border-color: grey;
+       
+}
+.price input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 7px;
+    left: 14px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  .price:hover input ~ .checkmark {
+    background-color: #ccc;
+  }  
+  .price input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+ 
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    
+  }
+  
+  .price input:checked ~ .checkmark:after {
+    display: block;
+    
+  }  
+  .price .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: white;
+  }
+  
