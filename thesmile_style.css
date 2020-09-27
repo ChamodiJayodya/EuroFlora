@@ -130,7 +130,7 @@ header{
   .last_section{
       margin-left: 45px;
   }
-  form{
+  /* form{
       margin-left: 20px;
   }
   .col-1{
@@ -144,7 +144,7 @@ header{
   }
   .row{
       display:flex;
-  }
+  } */
   input[type=submit] {
     background-color: maroon;
     color: white;
@@ -153,6 +153,7 @@ header{
     border-radius: 4px;
     cursor: pointer;
     margin-left: 450px;
+    margin-bottom: 20px;
   }
   form p{
       color: gray;
