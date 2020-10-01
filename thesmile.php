@@ -39,31 +39,20 @@
                 Price (Delivery Included)<br>
                 <hr style="margin-left: 50px;">
             </p>
-                <label class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Standard 78.90 &euro; 
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>  
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
-                <i class="fa fa-info-circle" style="color: maroon;" ></i>
-              </label>
-              
 
-              <label class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Deluxe 98.90 &euro; 
-                <input type="checkbox">
-                <span class="checkmark"></span>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa fa-info-circle" style="color: maroon;"></i>
-              </label>
+            <input type="radio" name="price" value="78.90" onclick="if(this.checked){calculate()}" checked>
+                    <label for="">Standard 78.90 €</label><br><br>
+                    <input type="radio" name="price" value="98.90" onclick="if(this.checked){calculate()}">
+                    <label for="">Deluxe 98.90 €</label><br><br>
+                    <input type="radio" name="price" value="118.90" onclick="if(this.checked){calculate()}">
+                    <label for="">Premium 118.90 €</label><br><br>
+                    
+                    <label id="total">Total is Rs.00.00</label><br><br>
+                
 
-              <label class="price">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Premium 118.90 &euro; 
-                <input type="checkbox">
-                <span class="checkmark"></span>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <i class="fa fa-info-circle" style="color: maroon;"></i>
-              </label>
-
-              <div class="box">
+              <!-- <div class="box">
                   Total : 78.90&euro; (delivery included)
-              </div>
+              </div> -->
               <div class="last_section">
                   The Smile 78.90&euro;
               </div>
@@ -172,7 +161,17 @@
             
             
         </div>
-   
+        <script>
+            function calculate() {
+
+            var ele = document.getElementsByName('price'); 
+
+            for(i = 0; i < ele.length; i++) { 
+            if(ele[i].checked) 
+            document.getElementById("total").innerHTML= "Total is "+ele[i].value; 
+                } 
+            }
+        </script>
     
 </body>
 </html>
