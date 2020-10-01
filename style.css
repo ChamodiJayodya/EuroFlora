@@ -54,7 +54,7 @@ header{
     background-color: white;
     margin-left: 150px;
     margin-right: 150px;
-    height: 1850px;
+    height: 2500px;
 }
 .section_2{
     font-family: Brush Script MT, Brush Script Std, cursive;
@@ -106,9 +106,39 @@ header{
     margin-right: 150px;
     
 }
+
 .column{
     float: left;
     width: 25%;
     text-align: left; 
     
+    
 }
+.pricetag{
+    height:25px;
+    width: 40px;
+    background:#99753a;
+    border: 0 solid #99753a;
+    color: white;
+    padding: 5px 25px 5px 15px;
+    position:relative;
+    margin:0 10px 0 20px;
+    top: 10px;
+}
+
+.pricetag:before{
+    position:absolute;
+    content:"\25CF";
+    color:white;
+    text-shadow: 0 0 1px #333;
+    font-size:11px;
+    line-height:0px;
+    text-indent:12px;
+    left:-15px;
+    top: 0px;
+    width: 1px;
+    height:0px;
+    border-right:14px solid #99753a;
+    border-top:  13px solid transparent;
+    border-bottom:  13px solid transparent;
+}  
