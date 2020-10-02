@@ -44,6 +44,8 @@ header{
     font-weight: bold;
     transition: 0.4px;
 }
+
+
 .container{
     margin-left: 150px;
     margin-right: 150px;
@@ -55,7 +57,7 @@ header{
 .image p{
     margin-right: 50px;
 }
-.price{   
+/* .price{   
         display: block;
         position: relative;
         padding-left: 35px;
@@ -117,7 +119,7 @@ header{
     height: 9px;
     border-radius: 50%;
     background: white;
-  }
+  } */
   .box{
       box-sizing: border-box;
       margin-left: 45px;
@@ -130,21 +132,7 @@ header{
   .last_section{
       margin-left: 45px;
   }
-  /* form{
-      margin-left: 20px;
-  }
-  .col-1{
-      margin-left: 20px;
-    
-  }
- 
-  .col-2{
-      margin-left: 90px;
-      float: left;
-  }
-  .row{
-      display:flex;
-  } */
+  
   input[type=submit] {
     background-color: maroon;
     color: white;
@@ -160,4 +148,14 @@ header{
       font-size: 13px;
       margin-top: 5px;
   }
-  
+ .radio_btn{
+     margin-left: 45;
+    box-sizing: border-box;
+    border-style: double;
+    width: 200px;
+    
+ }
+
+  input[type=radio]{
+     margin-left:45px ;
+ } 

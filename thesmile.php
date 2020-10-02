@@ -39,20 +39,19 @@
                 Price (Delivery Included)<br>
                 <hr style="margin-left: 50px;">
             </p>
-
+            <div class="radio_btn">
             <input type="radio" name="price" value="78.90" onclick="if(this.checked){calculate()}" checked>
                     <label for="">Standard 78.90 €</label><br><br>
-                    <input type="radio" name="price" value="98.90" onclick="if(this.checked){calculate()}">
+            </div>
+            <input type="radio" name="price" value="98.90" onclick="if(this.checked){calculate()}">
                     <label for="">Deluxe 98.90 €</label><br><br>
-                    <input type="radio" name="price" value="118.90" onclick="if(this.checked){calculate()}">
+            <input type="radio" name="price" value="118.90" onclick="if(this.checked){calculate()}">
                     <label for="">Premium 118.90 €</label><br><br>
-                    
-                    <label id="total">Total is Rs.00.00</label><br><br>
+              
+                 <br>
+                    <label class="box" id="total">Total: 00.00 &euro; (Delivery included)</label><br><br>
                 
 
-              <!-- <div class="box">
-                  Total : 78.90&euro; (delivery included)
-              </div> -->
               <div class="last_section">
                   The Smile 78.90&euro;
               </div>
@@ -70,51 +69,7 @@
                 </p>
                 <hr style="margin-right: 50px; ">
 
-                <!-- <form>
-                    <div class="row">
-                    <div class="col-1">
-                    <label for="delivery date"><b>Delivery date*</b> </label></div>
-                    <div class="col-2">
-                    <input type="date" id="date" name="date"> <br><br></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1">
-                    <label for="delivery time"><b>Delivery time</b> </label></div>
-                    <div class="col-2">
-                    <input type="radio" id="workday" name="workday" value="">
-                    <label for="workday">Working Day- free(9.00 a.m.-9.00p.m.) <i class="fa fa-info-circle" style="color: maroon;" ></i></label><br>
-                    <input type="radio" id="weekend" name="weekend" value="">
-                    <label for="weekend">Sunday and Public Holidays 4.00&euro; <i class="fa fa-info-circle" style="color: maroon;" ></i></label><br><br>
-                  </div>      
-                </div>
-
-                    <div class="row">
-                        <div class="col-1">
-                    <label for="quantity"><b>Quantity*</b> </label></div>
-                    <div class="col-2">
-                    <input type="text" id="quantity" name="quantity"> <br><br></div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-1">
-                    <label for="message"><b>Message</b> <br>Out of ideas? Choose a <br> message</label></div>
-                    <div class="col-2">
-                    <textarea id="message" name="message" rows="4" cols="50" >
-                    </textarea>
-                    <p>250 characters remaining</p>
-                    </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1">
-                    <label for="signature"><b>Signature</b> </label></div>
-                    <div class="col-2">
-                    <input type="text" id="signature" name="signature"> <br><br>
-                    <p>If the messaged is not signed, it will be delivered anonymously.</p></div>
-                        </div>
-
-                    <input type="submit" value="Continue >>">
-                </form> -->
-
+                
                 <table>
                     <tr>
                         <td><label for=""><b>Delivery date*</b></label></td>
@@ -124,9 +79,9 @@
                     <tr>
                         <td><label for=""><b>Delivery time</b></label></td>
                         <td>
-                            <input type="radio">
+                            <input type="radio"name="date" value="" onclick="if(this.checked){calculate()}" checked>
                             <label for="">Working Day Free (9 a.m. - 9 p.m.)</label><br>
-                            <input type="radio">
+                            <input type="radio" name="date" value="" onclick="if(this.checked){calculate()}" checked>
                             <label for="">Sunday and Public Holidays 4.00 €</label>
                         </td>
                     </tr>
