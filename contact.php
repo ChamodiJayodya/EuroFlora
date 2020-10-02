@@ -30,14 +30,14 @@
     request will be read and managed in real time. If you have already placed an order you can call the
     phone number dedicated to the customers, you received in the summary email.
     </div>
-
+            <br><br>
     <div class="container">
         <form class="contact_form" action="contactdb.php" method="post" enctype="multipart/form-data">
 
-          
+          <div class="row">
               <label for="name">Name*</label>
               <input type="text" id="name" name="name"><br><br>
-      
+          </div>
               <label for="email">E-mail*</label>        
               <input type="text" id="email" name="email"><br><br>
           
@@ -59,18 +59,12 @@
          
               <input type="file" value="file1" name="file1"><br><br>
 
-              <input type="submit" value="Start">
-             
-        
-
-        
+              <input type="submit" value="Start">       
 
         </form>
 
         
       </div>
-
-      
-    
+   
 </body>
 </html>
